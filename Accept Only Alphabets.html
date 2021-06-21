@@ -1,0 +1,20 @@
+
+<script type="text/javascript">
+function AllowAlphabet(){
+if (!frm.alphabet.value.match(/^[a-z A-Z]+$/) && frm.alphabet.value !="")
+{
+frm.alphabet.value="";
+frm.alphabet.focus();
+
+}
+}
+</script>
+
+<table align=center>
+<tr><td><form name="frm">
+Enter Text: <input type="text" name="alphabet" onkeyup="AllowAlphabet()">
+</form><br>
+
+</td></tr>
+</td></tr>
+</table>

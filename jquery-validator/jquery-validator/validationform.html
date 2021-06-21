@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="./style.css" type="text/css" />
+<script type="text/javascript">
+$empty="Empty Field";//error message for Empty field
+$nameerr="Inavalid Name";//Error message for Name field
+$gendererr="Choose Gender";//Error message for Gender field
+$emailerr="Invalid Email";//Error message for Email field
+$numbererr="Invalid Number";//Error message for Number field
+$passworderr="Password Mismatch";//Error message for Password Field
+$termserr="Required";//Error message for terms checkbox
+</script>
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./password.js"></script>
+<script type="text/javascript" src="./valid.js"></script>
+<form name='registerform' method="post">
+<br>
+<table align='center' class="tablefield" cellspacing='0' cellpadding=0>
+<tr><td colspan=2><div class="pop_title">&nbsp;&nbsp;&nbsp;Form Field Validation</div></td></tr>
+<tr><td>
+<div id='success'>
+<table align=center class="innertable" cellspacing='3'>
+ <tr><td colspan=2 align=left class="registerfrm"><b>Personal Details</b><hr></td></tr>
+  <tr><td>First Name </td> <td> <input type='text' name='fname' id='fname' class="pop_txt"  />&nbsp;<span class="fnamespanimgg"></span> <br><span id='fnamespan' class=spn></span></td> </tr>
+  <tr><td>Last Name </td> <td> <input type='text' name='lname' id='lname' class="pop_txt" >&nbsp;<span class="lnamespanimgg"></span><br> <span id='lnamespan' class=spn></span></td> </tr>
+  <tr><td>Gender </td> <td> <select id='gender' style='width:144px;' class="pop_txt"><option>Choose Gender</option><option>Male</option><option>Female</option></select>&nbsp;<span class="genderspanimgg"></span><br> <span id='genderspan' class=spn></span></td> </tr>
+  <tr><td>Email  </td> <td> <input type='text' name='email' id='email' class="pop_txt" />&nbsp;<span class="emailspanimgg"></span> <br> <span id='emailspan' class=spn></span></td> </tr>
+  <tr><td>Mobile No </td> <td> <input type='text' name='cellno' id='cellno' class="pop_txt" maxlength="10" />&nbsp;<span class="cellnospanimgg"></span><br> <span id='cellnospan' class=spn></span></td> </tr>
+  <tr><td colspan=2 align=left class="registerfrm"><b><br>Authentication Details</b><hr></td></tr>
+  <tr><td>Username </td> <td> <input type='text' name='user' id='user' class="pop_txt"  maxlength="15" />&nbsp;&nbsp;<span class="userspanimgg"></span> <br> <span id='userspan' class=spn></span></td></tr>
+  <tr><td>Password <div id="capss" class="capps">Caps Lock is on.</div></td> <td> <input type='password' name='pass' id='pass' class="pop_txt"  maxlength="15" onkeypress="capLock(event)" onkeyup='CheckPasswordStrength(this.value);'  /> &nbsp;<span class="passspanimgg"></span>
+  <br><div id='pwd_strength' style="border: 1px solid #dcdcdc; width: 140px ; height: 5px; margin-top: 2px; background-color: #efefef;"></div>
+   <span id='passspan' class=spn></span></td> </tr>
+  <tr><td>Re-type Password </td> <td> <input type='password' name='reg_repassword' id='repas' class="pop_txt" />  &nbsp;<span class="repasspanimgg"></span> <br><span id='repasspan' class=spn></span></td> </tr>
+  <tr><td colspan='2' align='left'><br><input id="terms"  type="checkbox" name="terms">I accept that terms &nbsp;<span class="termsspanimgg"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id='termsspan' class=spn></span><br><br> <center><input type='button' name='register' value='Submit'  class="pop_but" /><div style="font-size: 10px;color: #dadada;" id="dumdiv">
+<a href="#" id="dum" style="text-decoration:none;color: #dadada;"></a></div></center>
+  </td> </tr>
+</table>
+</div>
+</td></tr></table>
+</form>

@@ -1,0 +1,17 @@
+
+<script type="text/javascript">
+var r={'special':/[\W]/g}
+function valid(o,w)
+{
+o.value = o.value.replace(r[w],'');
+}
+</script>
+
+
+
+
+<form id="myform">
+Enter the strings and numbers.It donot accept special characters like $,%,#,@ etc,but accept underscore<br><br>
+<center><input type="text" size="25" name="comments" onkeyup="valid(this,'special')" onblur="valid(this,'special')"><br><br></center>
+
+</form>

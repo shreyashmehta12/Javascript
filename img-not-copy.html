@@ -1,0 +1,15 @@
+<script type="text/javascript">
+
+  function nocontext(e) {
+            var clickedTag = (e == null) ? event.srcElement.tagName : e.target.tagName;
+            if (clickedTag == "IMG") {
+                alert(alertMsg);
+                return false;
+            }
+        }
+        var alertMsg = "Image context menu is disabled";
+        document.oncontextmenu = nocontext;
+</script>
+<img src="images2.jpg" height="400" width="400" alt="Back to Top" / >
+
+Image Cody Disable

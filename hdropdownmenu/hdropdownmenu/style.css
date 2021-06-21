@@ -1,0 +1,122 @@
+.navigation1 
+{
+	list-style: none;
+	padding: 0 25px;
+	margin-left: 75px;
+	width: 450px;
+	height: 50px;
+	background: url(images/menu_bg.gif) 0 0 repeat-x;
+	font: normal 12px/18px Arial;
+}
+ul.navigation1 
+{
+	float: left;
+}
+ul.navigation1 li 
+{
+ 	margin: 0 auto;
+	float: left;
+	padding-right: 15px;
+	position: relative;
+}
+ul.navigation1 li a
+{
+ 	float: left;
+	padding: 10px 5px;
+	color: #FFFFFF;
+	display: block;
+	text-decoration: none;	
+}
+ul.navigation1 li a:hover
+{
+	background: #000;
+}
+
+ul.navigation1 li ul.submenu 
+{
+	list-style: none;
+	margin: 0; 
+	padding: 0;
+	position: absolute;
+	left: 0; 
+	top: 35px;
+	background: #222222;
+	display: none;
+	float: left;
+	width: 170px;
+	border: 1px solid #efefef;
+	z-index:999;
+}
+ul.navigation1 li ul.submenu li
+{
+	margin: 0 auto; 
+	padding: 0;
+	border-bottom: 1px solid #373737;
+	width: 170px;
+}
+ul.navigation1 li ul.submenu li a 
+{
+	width: 145px;
+	background: #222222;
+	padding-left: 20px;
+	float: left;
+	color:#FFFFFF;
+}
+ul.navigation1 li ul.submenu li a:hover 
+{ 
+	background: #222222 url(images/tick.png) left center no-repeat;
+	/*padding-left: 30px;  */
+}
+
+
+
+
+@media only screen and (max-width:480px) {
+	
+	.navigation1 
+{
+	
+	margin-left: 0px;
+	width: 230px;
+	height:50px;
+	
+	
+}
+ul.navigation1 li ul.submenu li a 
+{
+	width:90%;
+	padding-left:20px;
+}
+ul.navigation1 li ul.submenu li a:hover 
+{
+	padding-left:20px;
+}
+ul.navigation1 li ul.submenu 
+{
+	width:100px;
+}
+ul.navigation1 li ul.submenu li
+{
+	width:80%;
+}
+ul.navigation1 li 
+{
+	padding-right:2px;
+}
+.services
+{
+	visibility: hidden;
+}
+}
+.resp_code
+{
+margin:5px 10px 10px 300px;
+padding:10px 20px 10px 20px;
+width:50%;
+}
+@media screen and (max-width: 480px)
+{
+.resp_code
+{width:auto !important;margin:0px !important;
+}
+}
